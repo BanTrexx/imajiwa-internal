@@ -1,0 +1,22 @@
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "admin",
+    "email": "admin@imajiwa.id",
+    "password": "123456",
+    "conf_password": "123456",
+    "role": "super-admin"
+}
+
+###
+PATCH http://localhost:5000/roles/1
+Content-Type: application/json  
+
+{
+    "name": "Super Admin",
+    "bos": ""
+}
+
+###
+GET http://localhost:5000/users
